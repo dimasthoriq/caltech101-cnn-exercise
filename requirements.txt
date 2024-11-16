@@ -3,5 +3,6 @@ scikit-learn
 scikit-image
 matplotlib
 seaborn
+torcheval
 # torch
 # torchvision
