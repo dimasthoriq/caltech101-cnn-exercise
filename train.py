@@ -216,4 +216,5 @@ def evaluate(model, data_loader, config):
         f.write(str(report))
 
     disp.plot()
-    disp.figure_.savefig(cm_save_path)
+    plt.savefig(cm_save_path)
+    plt.close()
