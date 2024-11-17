@@ -12,7 +12,7 @@ config = {
     'dropout_rate': 0.,
     'weight_decay': 2e-5,
     'loss': 'CE',
-    'from_scratch': False,
+    'from_scratch': 'imagenet',
     'learning_rate': 1e-1,
     'batch_size': 32,
 
@@ -36,7 +36,7 @@ compression: [None, 'SVD']
 dropout_rate: [0., 0.2]
 weight_decay: [2e-5, 0.]
 loss: ['ce', 'squared_hinge']
-from_scratch: [False, True]
+from_scratch: ['tune', 'random', 'imagenet']
 learning_rate: [1e-1, 1e-2, 1e-4]
 batch_size: [32, 16, 8]
 """
