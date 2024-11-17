@@ -1,4 +1,3 @@
-import os
 import torch
 from train import Trainer, evaluate, SquaredHingeLoss
 from models import CustomCNN, get_efficient_net, get_resnet
@@ -43,6 +42,8 @@ loss: ['ce', 'squared_hinge']
 from_scratch: ['imagenet', 'random', 'tune']
 learning_rate: [1e-1, 1e-2, 1e-4]
 batch_size: [32, 16, 8]
+
+44 experiments in total!
 """
 
 
@@ -87,10 +88,15 @@ for archi in ['custom', 'efficientnet_v2_s', 'resnet101']:
     print(f'Running experiments for {archi} architecture...')
     config['archi'] = archi
     if archi == 'custom':
-        for normalization in ['group', 'layer', 'batch']:
+        for normalization in ['layer', 'batch', 'group']:
             print(f'Running experiments for {normalization} normalization...')
             config['normalization'] = normalization
-            experiment(config)
+            if normalization == 'layer':
+                experiment(config)
+            else:
+                for batch_size in [8, 16, 32]:
+                    config['batch_size'] = batch_size
+                    experiment(config)
 
         for compression in [128, None]:
             print(f'Running experiments for {compression} compression...')
@@ -106,6 +112,12 @@ for archi in ['custom', 'efficientnet_v2_s', 'resnet101']:
         for from_scratch in ['random', 'imagenet', 'tune']:
             print(f'Running experiments for {from_scratch} initialization...')
             config['from_scratch'] = from_scratch
+            if from_scratch != 'random':
+                config['learning_rate'] = 1e-4
+            experiment(config)
+
+        for batch_size in [8, 16, 32]:
+            config['batch_size'] = batch_size
             experiment(config)
 
     for weight_decay in [0., 2e-5]:
@@ -118,8 +130,4 @@ for archi in ['custom', 'efficientnet_v2_s', 'resnet101']:
 
     for learning_rate in [1e-4, 1e-2, 1e-1]:
         config['learning_rate'] = learning_rate
-        experiment(config)
-
-    for batch_size in [8, 16, 32]:
-        config['batch_size'] = batch_size
         experiment(config)
