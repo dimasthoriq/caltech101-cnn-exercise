@@ -68,7 +68,7 @@ class Caltech101Exercise(torchvision.datasets.vision.VisionDataset):
         return len(self.samples)
 
 
-def get_loaders(batch_size=32, shuffle_train=True, resize_size=384, crop_size=384):
+def get_loaders(batch_size=32, shuffle_train=True, resize_size=256, crop_size=224):
     """
     Get train and test loaders for Caltech101 dataset
     """
