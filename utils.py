@@ -85,3 +85,12 @@ def get_loaders(batch_size=32, shuffle_train=True, resize_size=384, crop_size=38
     train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=shuffle_train)
     test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
     return train_loader, test_loader
+
+
+def get_model_size(model):
+    """
+    Get the number of parameters in a model
+    """
+    num_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
+    memory_mb = num_params * 4 / (1024*1024)
+    return num_params, memory_mb

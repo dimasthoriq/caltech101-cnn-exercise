@@ -148,12 +148,3 @@ class CustomCNN(torch.nn.Module):
         x = self.features(x)
         x = self.classifier(x)
         return x
-
-
-def get_model_size(model):
-    """
-    Get the number of parameters in a model
-    """
-    num_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
-    memory_mb = num_params * 4 / (1024*1024)
-    return num_params, memory_mb

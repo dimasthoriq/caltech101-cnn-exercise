@@ -1,5 +1,8 @@
 import os
 import torch
+from train import Trainer, evaluate
+from models import CustomCNN, get_efficient_net, get_resnet
+from utils import get_model_size, get_loaders
 
 
 config = {
@@ -36,7 +39,7 @@ compression: [None, 'SVD']
 dropout_rate: [0., 0.2]
 weight_decay: [2e-5, 0.]
 loss: ['ce', 'squared_hinge']
-from_scratch: ['tune', 'random', 'imagenet']
+from_scratch: ['imagenet', 'random', 'tune']
 learning_rate: [1e-1, 1e-2, 1e-4]
 batch_size: [32, 16, 8]
 """

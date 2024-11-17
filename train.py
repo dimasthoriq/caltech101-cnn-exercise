@@ -218,3 +218,41 @@ def evaluate(model, data_loader, config):
     disp.plot()
     plt.savefig(cm_save_path)
     plt.close()
+
+
+class SquaredHingeLoss(torch.nn.Module):
+    """
+    Squared Hinge Loss for multi-class classification
+
+    L = 1/n * sum_i(sum_j!=y_i max(0, margin - (f_j - f_y_i))^2)
+    where:
+    - n is the number of samples (batch size)
+    - f_y_i is the score of the correct class
+    - f_j is the score of the incorrect class
+    - margin is the desired separation (default 1)
+    """
+    def __init__(self, margin=1., reduction='mean'):
+        super(SquaredHingeLoss, self).__init__()
+        self.margin = margin
+        self.reduction = reduction
+
+    def forward(self, outputs, targets):
+        num_classes = outputs.size(1)
+
+        target_one_hot = torch.nn.functional.one_hot(targets, num_classes=num_classes).float()
+        correct_scores = torch.sum(outputs * target_one_hot, dim=1)
+        correct_scores = correct_scores.unsqueeze(1).expand(-1, num_classes)
+
+        margins = self.margin - (correct_scores - outputs)
+        margins = margins * (1 - target_one_hot)
+
+        squared_hinge = torch.clamp(margins, min=0).pow(2)
+        sample_losses = torch.sum(squared_hinge, dim=1)
+
+        if self.reduction == 'mean':
+            loss = torch.mean(sample_losses)
+        elif self.reduction == 'sum':
+            loss = torch.sum(sample_losses)
+        else:
+            loss = sample_losses
+        return loss
