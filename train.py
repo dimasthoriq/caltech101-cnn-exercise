@@ -8,6 +8,7 @@ import torch
 import time
 import datetime
 import torcheval.metrics
+import matplotlib.pyplot as plt
 from sklearn.metrics import classification_report, confusion_matrix, ConfusionMatrixDisplay
 
 
@@ -48,6 +49,11 @@ class Trainer:
         self.train_acc = torcheval.metrics.MulticlassAccuracy(device=self.device)
         self.val_acc = torcheval.metrics.MulticlassAccuracy(device=self.device)
         self.config = config
+        self.suffix = f"{config['archi']}arch_{config['normalization']}norm_" \
+                      f"{config['dropout_rate']}do_{config['weight_decay']}wd_" \
+                      f"{config['loss']}loss_{config['compression']}trunc_" \
+                      f"{config['learning_rate']}lr_{config['batch_size']}batch_" \
+                      f"{config['from_scratch']}scratch"
 
     def train_one_epoch(self):
         epoch_loss = 0
@@ -133,26 +139,46 @@ class Trainer:
 
         duration = time.time() - time_start
         self.model.load_state_dict(self.best_model)
-        self.save_model()
         print('Training completed in {:.0f}m {:.0f}s'.format(duration // 60, duration % 60))
-        return train_losses[:self.best_epoch], val_losses[:self.best_epoch], train_accs[:self.best_epoch], val_accs[:self.best_epoch]
+        self.save_model()
+        self.save_training_curves(train_losses[:self.best_epoch],
+                                  val_losses[:self.best_epoch],
+                                  train_accs[:self.best_epoch],
+                                  val_accs[:self.best_epoch]
+                                  )
 
     def save_model(self):
         time_stamp = datetime.datetime.today().strftime('%Y%m%d_%H%M')
         exp_path = "./Experiments/"
         if not os.path.exists(exp_path):
             os.makedirs(exp_path)
-        model_save_path = os.path.join(exp_path, f"model_{self.config['archi']}arch_"
-                                                 f"{self.config['normalization']}norm_"
-                                                 f"{self.config['dropout_rate']}do_"
-                                                 f"{self.config['weight_decay']}wd_"
-                                                 f"{self.config['loss']}loss_"
-                                                 f"{self.config['compression']}trunc_"
-                                                 f"{self.config['learning_rate']}lr_"
-                                                 f"{self.config['batch_size']}batch_"
-                                                 f"{self.config['from_scratch']}scratch_"
-                                                 f"{time_stamp}.pth")
+        model_save_path = os.path.join(exp_path, f"model_{self.suffix}_{time_stamp}.pth")
         torch.save(self.model, model_save_path)
+
+    def save_training_curves(self, train_losses, val_losses, train_accs, val_accs):
+        time_stamp = datetime.datetime.today().strftime('%Y%m%d_%H%M')
+        exp_path = "./Experiments/"
+        if not os.path.exists(exp_path):
+            os.makedirs(exp_path)
+        curve_save_path = os.path.join(exp_path, f"curves_{self.suffix}_{time_stamp}.png")
+        plt.figure(figsize=(10, 5))
+        plt.subplot(1, 2, 1)
+        plt.plot(range(1, len(train_losses) + 1), train_losses, label='Train')
+        plt.plot(range(1, len(val_losses) + 1), val_losses, label='Test')
+        plt.title('Loss')
+        plt.xlabel('Epochs')
+        plt.ylabel('Loss')
+        plt.legend()
+        plt.subplot(1, 2, 2)
+        plt.plot(range(1, len(train_accs) + 1), train_accs, label='Train')
+        plt.plot(range(1, len(val_accs) + 1), val_accs, label='Test')
+        plt.title('Accuracy')
+        plt.xlabel('Epochs')
+        plt.ylabel('Accuracy')
+        plt.legend()
+        plt.tight_layout()
+        plt.savefig(curve_save_path)
+        plt.close()
 
 
 def evaluate(model, data_loader, config):
@@ -174,7 +200,7 @@ def evaluate(model, data_loader, config):
 
     # Save the report and matrix
     time_stamp = datetime.datetime.today().strftime('%Y%m%d_%H%M')
-    suffix = f"_{config['archi']}arch_{config['normalization']}norm_"\
+    suffix = f"{config['archi']}arch_{config['normalization']}norm_"\
              f"{config['dropout_rate']}do_{config['weight_decay']}wd_"\
              f"{config['loss']}loss_{config['compression']}trunc_"\
              f"{config['learning_rate']}lr_{config['batch_size']}batch_"\
