@@ -22,7 +22,7 @@ def get_efficient_net(num_classes=10, from_scratch='tune'):
 
 def get_resnet(num_classes=10, from_scratch='tune'):
     weight = None if from_scratch == 'random' else 'DEFAULT'
-    model = torchvision.models.resnet101(pretrained=weight)
+    model = torchvision.models.resnet101(weights=weight)
 
     if from_scratch == 'tune':
         for param in model.parameters():
