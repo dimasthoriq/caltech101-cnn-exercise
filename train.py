@@ -103,6 +103,7 @@ class Trainer:
         val_accs = []
 
         time_start = time.time()
+        self.model.to(self.device)
         for epoch in range(self.max_epochs):
             train_loss, train_acc = self.train_one_epoch()
             val_loss, val_acc = self.validate()

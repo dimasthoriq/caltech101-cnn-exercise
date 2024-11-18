@@ -76,58 +76,63 @@ def experiment(config):
     optimizer = torch.optim.Adam(model.parameters(), lr=config['learning_rate'], weight_decay=config['weight_decay'])
     criterion = torch.nn.CrossEntropyLoss() if config['loss'] == 'ce' else SquaredHingeLoss()
 
-    trainer = Trainer(model, train_loader, test_loader, criterion, optimizer, config)
-    print(f'Training for: {trainer.suffix}')
-    trainer.fit()
-    print(f'Evaluating on test set...')
-    evaluate(trainer.model, test_loader, config)
-    print(f'Finished!')
+    try:
+        trainer = Trainer(model, train_loader, test_loader, criterion, optimizer, config)
+        print(f'Training for: {trainer.suffix}')
+        trainer.fit()
+        print(f'Evaluating on test set...')
+        evaluate(trainer.model, test_loader, config)
+        print(f'Finished!')
+    except RuntimeError as e:
+        print(f'Error: {e}')
+        print(f'Skipping experiment...')
 
 
-for archi in ['custom', 'efficientnet_v2_s', 'resnet101']:
-    print(f'Running experiments for {archi} architecture...')
-    config['archi'] = archi
-    if archi == 'custom':
-        for normalization in ['layer', 'batch', 'group']:
-            print(f'Running experiments for {normalization} normalization...')
-            config['normalization'] = normalization
-            if normalization == 'layer':
-                experiment(config)
-            else:
-                for batch_size in [8, 16, 32]:
-                    config['batch_size'] = batch_size
+if __name__ == '__main__':
+    for archi in ['custom', 'efficientnet_v2_s', 'resnet101']:
+        print(f'Running experiments for {archi} architecture...')
+        config['archi'] = archi
+        if archi == 'custom':
+            for normalization in ['layer', 'batch', 'group']:
+                print(f'Running experiments for {normalization} normalization...')
+                config['normalization'] = normalization
+                if normalization == 'layer':
                     experiment(config)
+                else:
+                    for batch_size in [8, 16, 32]:
+                        config['batch_size'] = batch_size
+                        experiment(config)
 
-        for compression in [128, None]:
-            print(f'Running experiments for {compression} compression...')
-            config['compression'] = compression
+            for compression in [128, None]:
+                print(f'Running experiments for {compression} compression...')
+                config['compression'] = compression
+                experiment(config)
+
+            for dropout_rate in [0., 0.2]:
+                print(f'Running experiments for {dropout_rate} dropout rate...')
+                config['dropout_rate'] = dropout_rate
+                experiment(config)
+
+        else:
+            for from_scratch in ['random', 'imagenet', 'tune']:
+                print(f'Running experiments for {from_scratch} initialization...')
+                config['from_scratch'] = from_scratch
+                if from_scratch != 'random':
+                    config['learning_rate'] = 1e-4
+                experiment(config)
+
+            for batch_size in [8, 16, 32]:
+                config['batch_size'] = batch_size
+                experiment(config)
+
+        for weight_decay in [0., 2e-5]:
+            config['weight_decay'] = weight_decay
             experiment(config)
 
-        for dropout_rate in [0., 0.2]:
-            print(f'Running experiments for {dropout_rate} dropout rate...')
-            config['dropout_rate'] = dropout_rate
+        for loss in ['squared_hinge', 'ce']:
+            config['loss'] = loss
             experiment(config)
 
-    else:
-        for from_scratch in ['random', 'imagenet', 'tune']:
-            print(f'Running experiments for {from_scratch} initialization...')
-            config['from_scratch'] = from_scratch
-            if from_scratch != 'random':
-                config['learning_rate'] = 1e-4
+        for learning_rate in [1e-4, 1e-2, 1e-1]:
+            config['learning_rate'] = learning_rate
             experiment(config)
-
-        for batch_size in [8, 16, 32]:
-            config['batch_size'] = batch_size
-            experiment(config)
-
-    for weight_decay in [0., 2e-5]:
-        config['weight_decay'] = weight_decay
-        experiment(config)
-
-    for loss in ['squared_hinge', 'ce']:
-        config['loss'] = loss
-        experiment(config)
-
-    for learning_rate in [1e-4, 1e-2, 1e-1]:
-        config['learning_rate'] = learning_rate
-        experiment(config)
