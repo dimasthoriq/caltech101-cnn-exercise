@@ -62,8 +62,6 @@ class CustomCNN(torch.nn.Module):
         def get_norm_layer(channels, norm_type):
             if norm_type == 'batch':
                 return torch.nn.BatchNorm2d(channels)
-            elif norm_type == 'layer':
-                return torch.nn.LayerNorm(channels)
             elif norm_type == 'group':
                 return torch.nn.GroupNorm(num_groups, channels)
             else:
@@ -105,40 +103,40 @@ class CustomCNN(torch.nn.Module):
 
     def compress_fc(self):
         """
-        Compress FC layer using Truncated SVD
+        Compress all FC layer using Truncated SVD
         """
-        fc_layer = None
-        for layer in self.classifier:
-            if isinstance(layer, torch.nn.Linear):
-                fc_layer = layer
-                break
-
-        if fc_layer is None:
+        if self.fc_compressed_rank is None:
             return
 
-        U, S, V = torch.linalg.svd(fc_layer.weight.data, full_matrices=False)
-        rank = min(self.compression_rank, len(S))
-        U = U[:, :rank]
-        S = S[:rank]
-        V = V[:rank, :]
-
-        compressed_fc1 = torch.nn.Linear(V.size(1), rank, bias=False)
-        compressed_fc2 = torch.nn.Linear(rank, U.size(0), bias=fc_layer.bias is not None)
-
-        with torch.no_grad():
-            compressed_fc1.weight.copy_(V)
-            compressed_fc2.weight.copy_(U*S[:, None])
-            if fc_layer.bias is not None:
-                compressed_fc2.bias.copy_(fc_layer.bias)
-
         compressed_classifier = torch.nn.Sequential()
-        replace = False
-        for layer in self.classifier:
-            if isinstance(layer, torch.nn.Linear) and not replace:
+        skip_next = False
+
+        for i, layer in enumerate(self.classifier):
+            if skip_next:
+                skip_next = False
+                continue
+
+            if isinstance(layer, torch.nn.Linear):
+                U, S, V = torch.linalg.svd(layer.weight.data, full_matrices=False)
+                rank = min(self.fc_compressed_rank, min(U.size(0), V.size(0)))
+                U = U[:, :rank]
+                S = S[:rank]
+                V = V[:rank, :]
+
+                compressed_fc1 = torch.nn.Linear(V.size(1), rank, bias=False)
+                compressed_fc2 = torch.nn.Linear(rank, U.size(0), bias=layer.bias is not None)
+
+                with torch.no_grad():
+                    compressed_fc1.weight.copy_(V)
+                    compressed_fc2.weight.copy_(U*S[None, :])
+                    if layer.bias is not None:
+                        compressed_fc2.bias.copy_(layer.bias)
+
                 compressed_classifier.append(compressed_fc1)
                 compressed_classifier.append(torch.nn.ReLU(inplace=True))
                 compressed_classifier.append(compressed_fc2)
-                replace = True
+                skip_next = True
+
             else:
                 compressed_classifier.append(layer)
 
