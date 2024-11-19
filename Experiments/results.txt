@@ -1,0 +1,793 @@
+Running experiments for custom architecture...
+
+Running experiments for batch normalization...
+
+Running experiments for 8 batch size vs normalization...
+Number of parameters: 103137802
+Model size: 393.44 MB
+Training for: customarch_batchnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_8batch_tunescratch
+Epoch 1/51 | Train Loss: 9.8897 | Val Loss: 2.7017 | Train Acc: 0.2000 | Val Acc: 0.3933 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 0.4118 | Val Loss: 1.8910 | Train Acc: 0.8733 | Val Acc: 0.5267 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 0.0886 | Val Loss: 1.8384 | Train Acc: 0.9733 | Val Acc: 0.5733 | Best Epoch: 8
+Epoch 16/51 | Train Loss: 0.0471 | Val Loss: 1.5204 | Train Acc: 0.9933 | Val Acc: 0.6733 | Best Epoch: 8
+Epoch 21/51 | Train Loss: 0.0178 | Val Loss: 1.7207 | Train Acc: 1.0000 | Val Acc: 0.6133 | Best Epoch: 16
+Epoch 26/51 | Train Loss: 0.0114 | Val Loss: 1.6192 | Train Acc: 1.0000 | Val Acc: 0.6400 | Best Epoch: 16
+Early stopping
+Epoch 26/51 | Train Loss: 0.0114 | Val Loss: 1.6192 | Train Acc: 1.0000 | Val Acc: 0.6400 | Best Epoch: 16
+Training completed in 1m 20s
+Evaluating on test set...
+Finished!
+
+Running experiments for 16 batch size vs normalization...
+Number of parameters: 103137802
+Model size: 393.44 MB
+Training for: customarch_batchnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_16batch_tunescratch
+Epoch 1/51 | Train Loss: 11.8481 | Val Loss: 2.5734 | Train Acc: 0.0733 | Val Acc: 0.3800 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 0.4523 | Val Loss: 1.3867 | Train Acc: 0.8600 | Val Acc: 0.5333 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 0.1476 | Val Loss: 1.3619 | Train Acc: 0.9667 | Val Acc: 0.6400 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 0.0714 | Val Loss: 1.3308 | Train Acc: 1.0000 | Val Acc: 0.6267 | Best Epoch: 13
+Epoch 21/51 | Train Loss: 0.0315 | Val Loss: 1.3199 | Train Acc: 0.9933 | Val Acc: 0.6867 | Best Epoch: 13
+Early stopping
+Epoch 23/51 | Train Loss: 0.0205 | Val Loss: 1.3334 | Train Acc: 1.0000 | Val Acc: 0.6600 | Best Epoch: 13
+Training completed in 0m 58s
+Evaluating on test set...
+Finished!
+
+Running experiments for 32 batch size vs normalization...
+Number of parameters: 103137802
+Model size: 393.44 MB
+Training for: customarch_batchnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 7.6542 | Val Loss: 2.8665 | Train Acc: 0.1733 | Val Acc: 0.1800 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 0.4723 | Val Loss: 1.4172 | Train Acc: 0.8467 | Val Acc: 0.5667 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 0.1057 | Val Loss: 1.5228 | Train Acc: 0.9733 | Val Acc: 0.6067 | Best Epoch: 7
+Epoch 16/51 | Train Loss: 0.0282 | Val Loss: 1.2857 | Train Acc: 1.0000 | Val Acc: 0.6933 | Best Epoch: 13
+Epoch 21/51 | Train Loss: 0.0231 | Val Loss: 1.5440 | Train Acc: 1.0000 | Val Acc: 0.6533 | Best Epoch: 13
+Early stopping
+Epoch 23/51 | Train Loss: 0.0284 | Val Loss: 1.2889 | Train Acc: 1.0000 | Val Acc: 0.6600 | Best Epoch: 13
+Training completed in 2m 43s
+Evaluating on test set...
+Finished!
+
+Running experiments for group normalization...
+
+Running experiments for 8 batch size vs normalization...
+Number of parameters: 103137802
+Model size: 393.44 MB
+Training for: customarch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_8batch_tunescratch
+Epoch 1/51 | Train Loss: 8.6551 | Val Loss: 4.4093 | Train Acc: 0.1733 | Val Acc: 0.2933 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 0.5541 | Val Loss: 1.4176 | Train Acc: 0.7933 | Val Acc: 0.6067 | Best Epoch: 4
+Epoch 11/51 | Train Loss: 0.1505 | Val Loss: 1.4114 | Train Acc: 0.9533 | Val Acc: 0.6267 | Best Epoch: 6
+Epoch 16/51 | Train Loss: 0.0132 | Val Loss: 1.6513 | Train Acc: 1.0000 | Val Acc: 0.6533 | Best Epoch: 11
+Epoch 21/51 | Train Loss: 0.0054 | Val Loss: 1.7707 | Train Acc: 1.0000 | Val Acc: 0.6467 | Best Epoch: 11
+Early stopping
+Epoch 21/51 | Train Loss: 0.0054 | Val Loss: 1.7707 | Train Acc: 1.0000 | Val Acc: 0.6467 | Best Epoch: 11
+Training completed in 1m 5s
+Evaluating on test set...
+Finished!
+
+Running experiments for 16 batch size vs normalization...
+Number of parameters: 103137802
+Model size: 393.44 MB
+Training for: customarch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_16batch_tunescratch
+Epoch 1/51 | Train Loss: 8.1933 | Val Loss: 4.8660 | Train Acc: 0.1667 | Val Acc: 0.2533 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 1.0874 | Val Loss: 1.4463 | Train Acc: 0.6533 | Val Acc: 0.5533 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 0.2292 | Val Loss: 1.7774 | Train Acc: 0.9333 | Val Acc: 0.5600 | Best Epoch: 8
+Epoch 16/51 | Train Loss: 0.0465 | Val Loss: 1.8519 | Train Acc: 0.9933 | Val Acc: 0.5933 | Best Epoch: 8
+Early stopping
+Epoch 18/51 | Train Loss: 0.0520 | Val Loss: 1.9198 | Train Acc: 0.9867 | Val Acc: 0.5467 | Best Epoch: 8
+Training completed in 0m 59s
+Evaluating on test set...
+Finished!
+
+Running experiments for 32 batch size vs normalization...
+Number of parameters: 103137802
+Model size: 393.44 MB
+Training for: customarch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 9.7501 | Val Loss: 6.2203 | Train Acc: 0.1067 | Val Acc: 0.2200 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 1.1733 | Val Loss: 1.4870 | Train Acc: 0.6267 | Val Acc: 0.4800 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 0.4823 | Val Loss: 1.4659 | Train Acc: 0.8400 | Val Acc: 0.5667 | Best Epoch: 9
+Epoch 16/51 | Train Loss: 0.1115 | Val Loss: 1.5253 | Train Acc: 0.9933 | Val Acc: 0.5267 | Best Epoch: 9
+Early stopping
+Epoch 19/51 | Train Loss: 0.0698 | Val Loss: 1.5761 | Train Acc: 0.9933 | Val Acc: 0.5600 | Best Epoch: 9
+Training completed in 2m 11s
+Evaluating on test set...
+Finished!
+
+Running experiments for 128 compression...
+Number of parameters: 26133102
+Model size: 99.69 MB
+Training for: customarch_groupnorm_0.2do_2e-05wd_celoss_128trunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 2.3807 | Val Loss: 2.4229 | Train Acc: 0.1000 | Val Acc: 0.1000 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 2.1542 | Val Loss: 2.1566 | Train Acc: 0.2533 | Val Acc: 0.3133 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 1.6895 | Val Loss: 1.7470 | Train Acc: 0.4733 | Val Acc: 0.4400 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 1.0671 | Val Loss: 1.6247 | Train Acc: 0.6200 | Val Acc: 0.4667 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 0.7237 | Val Loss: 1.6510 | Train Acc: 0.7600 | Val Acc: 0.5133 | Best Epoch: 18
+Epoch 26/51 | Train Loss: 0.4789 | Val Loss: 1.6233 | Train Acc: 0.8600 | Val Acc: 0.5400 | Best Epoch: 22
+Epoch 31/51 | Train Loss: 0.3461 | Val Loss: 1.9609 | Train Acc: 0.9000 | Val Acc: 0.5333 | Best Epoch: 22
+Early stopping
+Epoch 32/51 | Train Loss: 0.2857 | Val Loss: 1.9888 | Train Acc: 0.9133 | Val Acc: 0.5400 | Best Epoch: 22
+Training completed in 2m 55s
+Evaluating on test set...
+Finished!
+
+Running experiments for 64 compression...
+Number of parameters: 13255278
+Model size: 50.56 MB
+Training for: customarch_groupnorm_0.2do_2e-05wd_celoss_64trunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 2.3422 | Val Loss: 2.3408 | Train Acc: 0.1000 | Val Acc: 0.1000 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 2.1089 | Val Loss: 2.0755 | Train Acc: 0.1733 | Val Acc: 0.2467 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 1.5204 | Val Loss: 1.8219 | Train Acc: 0.3933 | Val Acc: 0.3067 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 1.0718 | Val Loss: 1.5961 | Train Acc: 0.5800 | Val Acc: 0.3667 | Best Epoch: 14
+Epoch 21/51 | Train Loss: 0.6718 | Val Loss: 1.6425 | Train Acc: 0.7200 | Val Acc: 0.4000 | Best Epoch: 16
+Epoch 26/51 | Train Loss: 0.4468 | Val Loss: 1.7274 | Train Acc: 0.7733 | Val Acc: 0.4200 | Best Epoch: 22
+Epoch 31/51 | Train Loss: 0.3344 | Val Loss: 1.7566 | Train Acc: 0.8600 | Val Acc: 0.5000 | Best Epoch: 22
+Early stopping
+Epoch 32/51 | Train Loss: 0.3327 | Val Loss: 1.8121 | Train Acc: 0.8467 | Val Acc: 0.5067 | Best Epoch: 22
+Training completed in 2m 37s
+Evaluating on test set...
+Finished!
+
+Running experiments for None compression...
+Number of parameters: 103137802
+Model size: 393.44 MB
+Training for: customarch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 9.1829 | Val Loss: 9.5055 | Train Acc: 0.1400 | Val Acc: 0.1800 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 1.5729 | Val Loss: 1.6483 | Train Acc: 0.4933 | Val Acc: 0.4333 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 0.5184 | Val Loss: 1.4467 | Train Acc: 0.8533 | Val Acc: 0.5800 | Best Epoch: 9
+Epoch 16/51 | Train Loss: 0.1751 | Val Loss: 1.4564 | Train Acc: 0.9533 | Val Acc: 0.5933 | Best Epoch: 9
+Early stopping
+Epoch 19/51 | Train Loss: 0.0754 | Val Loss: 1.5944 | Train Acc: 0.9867 | Val Acc: 0.5933 | Best Epoch: 9
+Training completed in 2m 11s
+Evaluating on test set...
+Finished!
+
+Running experiments for 0.0 dropout rate...
+Number of parameters: 103137802
+Model size: 393.44 MB
+Training for: customarch_groupnorm_0.0do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 11.7664 | Val Loss: 5.5538 | Train Acc: 0.0733 | Val Acc: 0.1400 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 1.0300 | Val Loss: 1.4306 | Train Acc: 0.6467 | Val Acc: 0.4667 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 0.2264 | Val Loss: 1.4307 | Train Acc: 0.9333 | Val Acc: 0.5600 | Best Epoch: 8
+Epoch 16/51 | Train Loss: 0.0335 | Val Loss: 1.6627 | Train Acc: 1.0000 | Val Acc: 0.5933 | Best Epoch: 8
+Early stopping
+Epoch 18/51 | Train Loss: 0.0197 | Val Loss: 1.6184 | Train Acc: 1.0000 | Val Acc: 0.5800 | Best Epoch: 8
+Training completed in 2m 5s
+Evaluating on test set...
+Finished!
+
+Running experiments for 0.5 dropout rate...
+Number of parameters: 103137802
+Model size: 393.44 MB
+Training for: customarch_groupnorm_0.5do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 7.7494 | Val Loss: 7.5770 | Train Acc: 0.1133 | Val Acc: 0.1000 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 1.4402 | Val Loss: 1.5327 | Train Acc: 0.4933 | Val Acc: 0.4333 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 0.6511 | Val Loss: 1.3359 | Train Acc: 0.7533 | Val Acc: 0.5933 | Best Epoch: 9
+Epoch 16/51 | Train Loss: 0.2089 | Val Loss: 1.3641 | Train Acc: 0.9467 | Val Acc: 0.6533 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 0.1643 | Val Loss: 1.5110 | Train Acc: 0.9267 | Val Acc: 0.6267 | Best Epoch: 15
+Early stopping
+Epoch 25/51 | Train Loss: 0.0820 | Val Loss: 1.5410 | Train Acc: 0.9733 | Val Acc: 0.6600 | Best Epoch: 15
+Training completed in 2m 53s
+Evaluating on test set...
+Finished!
+
+Running experiments for 0.2 dropout rate...
+Number of parameters: 103137802
+Model size: 393.44 MB
+Training for: customarch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 9.1159 | Val Loss: 7.8566 | Train Acc: 0.1000 | Val Acc: 0.1800 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 1.2654 | Val Loss: 1.4679 | Train Acc: 0.5200 | Val Acc: 0.5667 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 0.4113 | Val Loss: 1.4856 | Train Acc: 0.8667 | Val Acc: 0.5333 | Best Epoch: 7
+Epoch 16/51 | Train Loss: 0.1001 | Val Loss: 1.5221 | Train Acc: 0.9800 | Val Acc: 0.5733 | Best Epoch: 12
+Epoch 21/51 | Train Loss: 0.0449 | Val Loss: 1.8006 | Train Acc: 0.9933 | Val Acc: 0.5867 | Best Epoch: 12
+Early stopping
+Epoch 22/51 | Train Loss: 0.0240 | Val Loss: 1.7082 | Train Acc: 1.0000 | Val Acc: 0.6133 | Best Epoch: 12
+Training completed in 2m 32s
+Evaluating on test set...
+Finished!
+
+Running experiments for 0.0 weight decay...
+Number of parameters: 103137802
+Model size: 393.44 MB
+Training for: customarch_groupnorm_0.2do_0.0wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 9.7663 | Val Loss: 7.1467 | Train Acc: 0.1000 | Val Acc: 0.2333 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 1.1796 | Val Loss: 1.4496 | Train Acc: 0.6200 | Val Acc: 0.4733 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 0.2948 | Val Loss: 1.4116 | Train Acc: 0.9400 | Val Acc: 0.5933 | Best Epoch: 8
+Epoch 16/51 | Train Loss: 0.1026 | Val Loss: 1.5745 | Train Acc: 0.9667 | Val Acc: 0.5800 | Best Epoch: 8
+Early stopping
+Epoch 18/51 | Train Loss: 0.0329 | Val Loss: 1.7700 | Train Acc: 1.0000 | Val Acc: 0.5933 | Best Epoch: 8
+Training completed in 2m 6s
+Evaluating on test set...
+Finished!
+
+Running experiments for 0.01 weight decay...
+Number of parameters: 103137802
+Model size: 393.44 MB
+Training for: customarch_groupnorm_0.2do_0.01wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 7.9340 | Val Loss: 6.5041 | Train Acc: 0.1333 | Val Acc: 0.2067 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 0.9110 | Val Loss: 1.5212 | Train Acc: 0.6600 | Val Acc: 0.4800 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 0.2295 | Val Loss: 1.6638 | Train Acc: 0.9333 | Val Acc: 0.5733 | Best Epoch: 7
+Epoch 16/51 | Train Loss: 0.0720 | Val Loss: 1.5869 | Train Acc: 0.9733 | Val Acc: 0.6467 | Best Epoch: 7
+Early stopping
+Epoch 17/51 | Train Loss: 0.0370 | Val Loss: 1.5776 | Train Acc: 0.9933 | Val Acc: 0.6200 | Best Epoch: 7
+Training completed in 1m 58s
+Evaluating on test set...
+Finished!
+
+Running experiments for 2e-05 weight decay...
+Number of parameters: 103137802
+Model size: 393.44 MB
+Training for: customarch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 9.4405 | Val Loss: 7.5109 | Train Acc: 0.0867 | Val Acc: 0.2333 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 1.1033 | Val Loss: 1.6454 | Train Acc: 0.6200 | Val Acc: 0.5067 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 0.3255 | Val Loss: 1.4679 | Train Acc: 0.9067 | Val Acc: 0.5333 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 0.0974 | Val Loss: 1.7585 | Train Acc: 0.9800 | Val Acc: 0.5933 | Best Epoch: 10
+Early stopping
+Epoch 20/51 | Train Loss: 0.0500 | Val Loss: 1.6204 | Train Acc: 0.9933 | Val Acc: 0.6067 | Best Epoch: 10
+Training completed in 2m 18s
+Evaluating on test set...
+Finished!
+
+Running experiments for squared_hinge loss...
+Number of parameters: 103137802
+Model size: 393.44 MB
+Training for: customarch_groupnorm_0.2do_2e-05wd_squared_hingeloss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 177.9742 | Val Loss: 56.7418 | Train Acc: 0.1133 | Val Acc: 0.2600 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 8.2758 | Val Loss: 9.3003 | Train Acc: 0.5400 | Val Acc: 0.5467 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 1.1498 | Val Loss: 5.6679 | Train Acc: 0.8067 | Val Acc: 0.5867 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 0.4179 | Val Loss: 5.0977 | Train Acc: 0.8733 | Val Acc: 0.5733 | Best Epoch: 14
+Epoch 21/51 | Train Loss: 0.1734 | Val Loss: 4.4798 | Train Acc: 0.9533 | Val Acc: 0.6133 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 0.1417 | Val Loss: 4.5471 | Train Acc: 0.9733 | Val Acc: 0.6133 | Best Epoch: 21
+Epoch 31/51 | Train Loss: 0.1071 | Val Loss: 4.5397 | Train Acc: 0.9733 | Val Acc: 0.6133 | Best Epoch: 29
+Epoch 36/51 | Train Loss: 0.0820 | Val Loss: 4.3455 | Train Acc: 0.9733 | Val Acc: 0.6333 | Best Epoch: 29
+Early stopping
+Epoch 39/51 | Train Loss: 0.0808 | Val Loss: 4.6770 | Train Acc: 0.9867 | Val Acc: 0.6000 | Best Epoch: 29
+Training completed in 4m 30s
+Evaluating on test set...
+Finished!
+
+Running experiments for ce loss...
+Number of parameters: 103137802
+Model size: 393.44 MB
+Training for: customarch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 7.4290 | Val Loss: 7.5228 | Train Acc: 0.2067 | Val Acc: 0.2000 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 1.0443 | Val Loss: 1.3901 | Train Acc: 0.6400 | Val Acc: 0.5533 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 0.2476 | Val Loss: 1.3062 | Train Acc: 0.9267 | Val Acc: 0.6333 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 0.0562 | Val Loss: 1.4831 | Train Acc: 0.9867 | Val Acc: 0.6267 | Best Epoch: 10
+Early stopping
+Epoch 20/51 | Train Loss: 0.0169 | Val Loss: 1.5686 | Train Acc: 1.0000 | Val Acc: 0.6400 | Best Epoch: 10
+Training completed in 2m 18s
+Evaluating on test set...
+Finished!
+
+Running experiments for 0.01 learning rate...
+Number of parameters: 103137802
+Model size: 393.44 MB
+Training for: customarch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.01lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 1019.7643 | Val Loss: 631.2333 | Train Acc: 0.0467 | Val Acc: 0.1000 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 2.4293 | Val Loss: 2.3835 | Train Acc: 0.1267 | Val Acc: 0.1067 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 2.2287 | Val Loss: 2.2825 | Train Acc: 0.1333 | Val Acc: 0.1067 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 2.2492 | Val Loss: 2.2826 | Train Acc: 0.1200 | Val Acc: 0.1067 | Best Epoch: 14
+Epoch 21/51 | Train Loss: 2.2324 | Val Loss: 2.1984 | Train Acc: 0.1467 | Val Acc: 0.1600 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 2.2175 | Val Loss: 2.2858 | Train Acc: 0.1400 | Val Acc: 0.1067 | Best Epoch: 21
+Epoch 31/51 | Train Loss: 2.1254 | Val Loss: 2.1679 | Train Acc: 0.1800 | Val Acc: 0.1733 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 2.1229 | Val Loss: 2.1517 | Train Acc: 0.1800 | Val Acc: 0.1600 | Best Epoch: 31
+Epoch 41/51 | Train Loss: 2.1805 | Val Loss: 2.1914 | Train Acc: 0.1733 | Val Acc: 0.1667 | Best Epoch: 36
+Epoch 46/51 | Train Loss: 2.1546 | Val Loss: 2.2035 | Train Acc: 0.1667 | Val Acc: 0.1333 | Best Epoch: 36
+Early stopping
+Epoch 46/51 | Train Loss: 2.1546 | Val Loss: 2.2035 | Train Acc: 0.1667 | Val Acc: 0.1333 | Best Epoch: 36
+Training completed in 5m 19s
+Evaluating on test set...
+Finished!
+
+Running experiments for 1e-05 learning rate...
+Number of parameters: 103137802
+Model size: 393.44 MB
+Training for: customarch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_1e-05lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 2.4294 | Val Loss: 2.0910 | Train Acc: 0.1333 | Val Acc: 0.3067 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 1.0790 | Val Loss: 1.3404 | Train Acc: 0.6400 | Val Acc: 0.6000 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 0.3583 | Val Loss: 1.2030 | Train Acc: 0.9533 | Val Acc: 0.6333 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 0.1446 | Val Loss: 1.2344 | Train Acc: 1.0000 | Val Acc: 0.6333 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 0.0674 | Val Loss: 1.2226 | Train Acc: 1.0000 | Val Acc: 0.6667 | Best Epoch: 15
+Early stopping
+Epoch 25/51 | Train Loss: 0.0319 | Val Loss: 1.2475 | Train Acc: 1.0000 | Val Acc: 0.6533 | Best Epoch: 15
+Training completed in 2m 53s
+Evaluating on test set...
+Finished!
+
+Running experiments for 0.0001 learning rate...
+Number of parameters: 103137802
+Model size: 393.44 MB
+Training for: customarch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 10.4281 | Val Loss: 7.1190 | Train Acc: 0.0933 | Val Acc: 0.2133 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 1.4288 | Val Loss: 1.5786 | Train Acc: 0.5800 | Val Acc: 0.5333 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 0.3797 | Val Loss: 1.3753 | Train Acc: 0.9000 | Val Acc: 0.6200 | Best Epoch: 9
+Epoch 16/51 | Train Loss: 0.0916 | Val Loss: 1.4460 | Train Acc: 0.9933 | Val Acc: 0.6200 | Best Epoch: 9
+Early stopping
+Epoch 19/51 | Train Loss: 0.0779 | Val Loss: 1.6018 | Train Acc: 0.9800 | Val Acc: 0.6200 | Best Epoch: 9
+Training completed in 2m 11s
+Evaluating on test set...
+Finished!
+
+Running experiments for efficientnet_v2_s architecture...
+
+Running experiments for random initialization...
+Number of parameters: 20190298
+Model size: 77.02 MB
+Training for: efficientnet_v2_sarch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_randomscratch
+Error: CUDA out of memory. Tried to allocate 12.00 MiB. GPU 0 has a total capacity of 4.00 GiB of which 0 bytes is free. Of the allocated memory 10.57 GiB is allocated by PyTorch, 
+and 202.90 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Skipping experiment...
+
+Running experiments for imagenet initialization...
+Number of parameters: 20190298
+Model size: 77.02 MB
+Training for: efficientnet_v2_sarch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_imagenetscratch
+Error: CUDA out of memory. Tried to allocate 68.00 MiB. GPU 0 has a total capacity of 4.00 GiB of which 0 bytes is free. Of the allocated memory 10.64 GiB is allocated by PyTorch, 
+and 108.65 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Skipping experiment...
+
+Running experiments for tune initialization...
+Number of parameters: 12810
+Model size: 0.05 MB
+Training for: efficientnet_v2_sarch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 2.2423 | Val Loss: 2.1647 | Train Acc: 0.1667 | Val Acc: 0.2733 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 2.0078 | Val Loss: 1.9567 | Train Acc: 0.6667 | Val Acc: 0.8200 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 1.7926 | Val Loss: 1.7576 | Train Acc: 0.8600 | Val Acc: 0.9133 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 1.5655 | Val Loss: 1.5748 | Train Acc: 0.9267 | Val Acc: 0.9267 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 1.4024 | Val Loss: 1.4098 | Train Acc: 0.9333 | Val Acc: 0.9600 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 1.2397 | Val Loss: 1.2665 | Train Acc: 0.9400 | Val Acc: 0.9600 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 1.0706 | Val Loss: 1.1258 | Train Acc: 0.9933 | Val Acc: 0.9600 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 0.9526 | Val Loss: 1.0208 | Train Acc: 0.9800 | Val Acc: 0.9600 | Best Epoch: 35
+Epoch 41/51 | Train Loss: 0.8292 | Val Loss: 0.9156 | Train Acc: 0.9867 | Val Acc: 0.9600 | Best Epoch: 40
+Epoch 46/51 | Train Loss: 0.7537 | Val Loss: 0.8341 | Train Acc: 1.0000 | Val Acc: 0.9733 | Best Epoch: 45
+Training completed in 28m 1s
+Evaluating on test set...
+Finished!
+
+Running experiments for 8 batch size...
+Number of parameters: 12810
+Model size: 0.05 MB
+Training for: efficientnet_v2_sarch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_8batch_tunescratch
+Epoch 1/51 | Train Loss: 2.3284 | Val Loss: 2.2692 | Train Acc: 0.0867 | Val Acc: 0.1533 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 1.8426 | Val Loss: 1.8758 | Train Acc: 0.7600 | Val Acc: 0.8467 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 1.4614 | Val Loss: 1.5682 | Train Acc: 0.9267 | Val Acc: 0.9267 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 1.1819 | Val Loss: 1.2928 | Train Acc: 0.9533 | Val Acc: 0.9400 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 0.9490 | Val Loss: 1.0817 | Train Acc: 0.9400 | Val Acc: 0.9600 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 0.7367 | Val Loss: 0.9214 | Train Acc: 0.9933 | Val Acc: 0.9600 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 0.6360 | Val Loss: 0.7849 | Train Acc: 0.9800 | Val Acc: 0.9667 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 0.5558 | Val Loss: 0.6579 | Train Acc: 0.9867 | Val Acc: 0.9533 | Best Epoch: 35
+Epoch 41/51 | Train Loss: 0.4746 | Val Loss: 0.6058 | Train Acc: 0.9667 | Val Acc: 0.9667 | Best Epoch: 39
+Epoch 46/51 | Train Loss: 0.4132 | Val Loss: 0.5576 | Train Acc: 0.9933 | Val Acc: 0.9800 | Best Epoch: 43
+Training completed in 24m 50s
+Evaluating on test set...
+Finished!
+
+Running experiments for 16 batch size...
+Number of parameters: 12810
+Model size: 0.05 MB
+Training for: efficientnet_v2_sarch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_16batch_tunescratch
+Epoch 1/51 | Train Loss: 2.2787 | Val Loss: 2.2299 | Train Acc: 0.2267 | Val Acc: 0.3467 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 1.9107 | Val Loss: 1.9254 | Train Acc: 0.7667 | Val Acc: 0.8333 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 1.5719 | Val Loss: 1.6298 | Train Acc: 0.9533 | Val Acc: 0.9467 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 1.3931 | Val Loss: 1.4192 | Train Acc: 0.9200 | Val Acc: 0.9667 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 1.1205 | Val Loss: 1.2222 | Train Acc: 0.9467 | Val Acc: 0.9733 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 0.9527 | Val Loss: 1.0712 | Train Acc: 0.9733 | Val Acc: 0.9667 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 0.7638 | Val Loss: 0.9046 | Train Acc: 0.9867 | Val Acc: 0.9667 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 0.6652 | Val Loss: 0.8077 | Train Acc: 0.9867 | Val Acc: 0.9733 | Best Epoch: 35
+Epoch 41/51 | Train Loss: 0.5961 | Val Loss: 0.7056 | Train Acc: 0.9733 | Val Acc: 0.9733 | Best Epoch: 40
+Epoch 46/51 | Train Loss: 0.5384 | Val Loss: 0.6615 | Train Acc: 0.9933 | Val Acc: 0.9733 | Best Epoch: 45
+Training completed in 16m 51s
+Evaluating on test set...
+Finished!
+
+Running experiments for 32 batch size...
+Number of parameters: 12810
+Model size: 0.05 MB
+Training for: efficientnet_v2_sarch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 2.2969 | Val Loss: 2.2655 | Train Acc: 0.1000 | Val Acc: 0.1400 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 2.0401 | Val Loss: 2.0341 | Train Acc: 0.5800 | Val Acc: 0.7667 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 1.8138 | Val Loss: 1.8343 | Train Acc: 0.8800 | Val Acc: 0.8933 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 1.6190 | Val Loss: 1.6481 | Train Acc: 0.8933 | Val Acc: 0.9133 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 1.3939 | Val Loss: 1.4720 | Train Acc: 0.9733 | Val Acc: 0.9400 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 1.2598 | Val Loss: 1.3321 | Train Acc: 0.9467 | Val Acc: 0.9467 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 1.1172 | Val Loss: 1.1868 | Train Acc: 0.9600 | Val Acc: 0.9467 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 0.9787 | Val Loss: 1.0673 | Train Acc: 0.9800 | Val Acc: 0.9600 | Best Epoch: 35
+Epoch 41/51 | Train Loss: 0.9103 | Val Loss: 0.9642 | Train Acc: 0.9933 | Val Acc: 0.9600 | Best Epoch: 40
+Epoch 46/51 | Train Loss: 0.7449 | Val Loss: 0.8707 | Train Acc: 0.9800 | Val Acc: 0.9600 | Best Epoch: 45
+Training completed in 28m 1s
+Evaluating on test set...
+Finished!
+
+Running experiments for 0.0 weight decay...
+Number of parameters: 12810
+Model size: 0.05 MB
+Training for: efficientnet_v2_sarch_groupnorm_0.2do_0.0wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 2.2781 | Val Loss: 2.2598 | Train Acc: 0.1467 | Val Acc: 0.1667 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 2.0281 | Val Loss: 2.0248 | Train Acc: 0.6133 | Val Acc: 0.6800 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 1.7906 | Val Loss: 1.8192 | Train Acc: 0.8667 | Val Acc: 0.9467 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 1.6141 | Val Loss: 1.6314 | Train Acc: 0.8800 | Val Acc: 0.9600 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 1.4166 | Val Loss: 1.4618 | Train Acc: 0.9533 | Val Acc: 0.9600 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 1.2335 | Val Loss: 1.3075 | Train Acc: 0.9733 | Val Acc: 0.9667 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 1.0907 | Val Loss: 1.1714 | Train Acc: 0.9667 | Val Acc: 0.9733 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 0.9555 | Val Loss: 1.0612 | Train Acc: 0.9867 | Val Acc: 0.9733 | Best Epoch: 35
+Epoch 41/51 | Train Loss: 0.8789 | Val Loss: 0.9584 | Train Acc: 0.9867 | Val Acc: 0.9733 | Best Epoch: 40
+Epoch 46/51 | Train Loss: 0.7523 | Val Loss: 0.8582 | Train Acc: 0.9867 | Val Acc: 0.9733 | Best Epoch: 45
+Training completed in 28m 1s
+Evaluating on test set...
+Finished!
+
+Running experiments for 0.01 weight decay...
+Number of parameters: 12810
+Model size: 0.05 MB
+Training for: efficientnet_v2_sarch_groupnorm_0.2do_0.01wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 2.2793 | Val Loss: 2.2334 | Train Acc: 0.1467 | Val Acc: 0.1733 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 2.0344 | Val Loss: 2.0202 | Train Acc: 0.5467 | Val Acc: 0.7467 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 1.8224 | Val Loss: 1.8172 | Train Acc: 0.8067 | Val Acc: 0.8933 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 1.5890 | Val Loss: 1.6367 | Train Acc: 0.8933 | Val Acc: 0.9467 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 1.4154 | Val Loss: 1.4651 | Train Acc: 0.9533 | Val Acc: 0.9533 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 1.2574 | Val Loss: 1.3077 | Train Acc: 0.9667 | Val Acc: 0.9667 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 1.0919 | Val Loss: 1.1769 | Train Acc: 0.9800 | Val Acc: 0.9667 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 1.0104 | Val Loss: 1.0625 | Train Acc: 0.9467 | Val Acc: 0.9667 | Best Epoch: 35
+Epoch 41/51 | Train Loss: 0.8728 | Val Loss: 0.9550 | Train Acc: 0.9733 | Val Acc: 0.9667 | Best Epoch: 40
+Epoch 46/51 | Train Loss: 0.7769 | Val Loss: 0.8716 | Train Acc: 0.9867 | Val Acc: 0.9667 | Best Epoch: 45
+Training completed in 28m 0s
+Evaluating on test set...
+Finished!
+
+Running experiments for 2e-05 weight decay...
+Number of parameters: 12810
+Model size: 0.05 MB
+Training for: efficientnet_v2_sarch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 2.2993 | Val Loss: 2.2172 | Train Acc: 0.1333 | Val Acc: 0.3600 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 2.0452 | Val Loss: 2.0141 | Train Acc: 0.5600 | Val Acc: 0.7333 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 1.8150 | Val Loss: 1.8146 | Train Acc: 0.8067 | Val Acc: 0.9133 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 1.5979 | Val Loss: 1.6345 | Train Acc: 0.9067 | Val Acc: 0.9733 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 1.3961 | Val Loss: 1.4591 | Train Acc: 0.9600 | Val Acc: 0.9667 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 1.2464 | Val Loss: 1.3096 | Train Acc: 0.9800 | Val Acc: 0.9733 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 1.0918 | Val Loss: 1.1667 | Train Acc: 0.9800 | Val Acc: 0.9800 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 0.9600 | Val Loss: 1.0447 | Train Acc: 0.9800 | Val Acc: 0.9800 | Best Epoch: 35
+Epoch 41/51 | Train Loss: 0.8815 | Val Loss: 0.9431 | Train Acc: 0.9867 | Val Acc: 0.9800 | Best Epoch: 40
+Epoch 46/51 | Train Loss: 0.7831 | Val Loss: 0.8602 | Train Acc: 0.9800 | Val Acc: 0.9800 | Best Epoch: 45
+Training completed in 28m 4s
+Evaluating on test set...
+Finished!
+
+Running experiments for squared_hinge loss...
+Number of parameters: 12810
+Model size: 0.05 MB
+Training for: efficientnet_v2_sarch_groupnorm_0.2do_2e-05wd_squared_hingeloss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 8.5188 | Val Loss: 8.0795 | Train Acc: 0.2000 | Val Acc: 0.2400 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 4.8367 | Val Loss: 4.8250 | Train Acc: 0.5800 | Val Acc: 0.6333 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 2.4267 | Val Loss: 2.8109 | Train Acc: 0.9000 | Val Acc: 0.9000 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 1.4706 | Val Loss: 1.7453 | Train Acc: 0.9667 | Val Acc: 0.9400 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 0.9462 | Val Loss: 1.2220 | Train Acc: 0.9800 | Val Acc: 0.9467 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 0.4656 | Val Loss: 0.9051 | Train Acc: 1.0000 | Val Acc: 0.9533 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 0.3309 | Val Loss: 0.7314 | Train Acc: 0.9933 | Val Acc: 0.9533 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 0.2806 | Val Loss: 0.6420 | Train Acc: 0.9933 | Val Acc: 0.9600 | Best Epoch: 35
+Epoch 41/51 | Train Loss: 0.2198 | Val Loss: 0.5636 | Train Acc: 0.9933 | Val Acc: 0.9600 | Best Epoch: 40
+Epoch 46/51 | Train Loss: 0.2143 | Val Loss: 0.5152 | Train Acc: 0.9933 | Val Acc: 0.9733 | Best Epoch: 44
+Training completed in 28m 0s
+Evaluating on test set...
+Finished!
+
+Running experiments for ce loss...
+Number of parameters: 12810
+Model size: 0.05 MB
+Training for: efficientnet_v2_sarch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 2.2484 | Val Loss: 2.2371 | Train Acc: 0.2000 | Val Acc: 0.2467 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 2.0080 | Val Loss: 2.0113 | Train Acc: 0.5933 | Val Acc: 0.7667 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 1.7726 | Val Loss: 1.8095 | Train Acc: 0.9133 | Val Acc: 0.9000 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 1.5698 | Val Loss: 1.6219 | Train Acc: 0.9333 | Val Acc: 0.9800 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 1.3916 | Val Loss: 1.4514 | Train Acc: 0.9733 | Val Acc: 0.9733 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 1.2154 | Val Loss: 1.3055 | Train Acc: 0.9733 | Val Acc: 0.9733 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 1.0393 | Val Loss: 1.1699 | Train Acc: 0.9933 | Val Acc: 0.9733 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 0.9441 | Val Loss: 1.0514 | Train Acc: 1.0000 | Val Acc: 0.9667 | Best Epoch: 35
+Epoch 41/51 | Train Loss: 0.8808 | Val Loss: 0.9565 | Train Acc: 0.9933 | Val Acc: 0.9733 | Best Epoch: 40
+Epoch 46/51 | Train Loss: 0.7535 | Val Loss: 0.8620 | Train Acc: 0.9933 | Val Acc: 0.9733 | Best Epoch: 45
+Training completed in 28m 0s
+Evaluating on test set...
+Finished!
+
+Running experiments for 0.01 learning rate...
+Number of parameters: 12810
+Model size: 0.05 MB
+Training for: efficientnet_v2_sarch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.01lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 1.2097 | Val Loss: 0.2073 | Train Acc: 0.6867 | Val Acc: 0.9733 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 0.0046 | Val Loss: 0.0454 | Train Acc: 1.0000 | Val Acc: 0.9800 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 0.0026 | Val Loss: 0.0606 | Train Acc: 1.0000 | Val Acc: 0.9800 | Best Epoch: 5
+Early stopping
+Epoch 15/51 | Train Loss: 0.0023 | Val Loss: 0.0575 | Train Acc: 1.0000 | Val Acc: 0.9800 | Best Epoch: 5
+Training completed in 8m 25s
+Evaluating on test set...
+Finished!
+
+Running experiments for 1e-05 learning rate...
+Number of parameters: 12810
+Model size: 0.05 MB
+Training for: efficientnet_v2_sarch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_1e-05lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 2.3264 | Val Loss: 2.3501 | Train Acc: 0.0800 | Val Acc: 0.0400 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 2.3114 | Val Loss: 2.3078 | Train Acc: 0.0533 | Val Acc: 0.0733 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 2.2623 | Val Loss: 2.2831 | Train Acc: 0.1067 | Val Acc: 0.0867 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 2.2528 | Val Loss: 2.2592 | Train Acc: 0.1400 | Val Acc: 0.1267 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 2.2424 | Val Loss: 2.2375 | Train Acc: 0.1400 | Val Acc: 0.1533 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 2.2094 | Val Loss: 2.2149 | Train Acc: 0.2267 | Val Acc: 0.2200 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 2.1827 | Val Loss: 2.1931 | Train Acc: 0.2800 | Val Acc: 0.2867 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 2.1638 | Val Loss: 2.1722 | Train Acc: 0.3000 | Val Acc: 0.3267 | Best Epoch: 35
+Epoch 41/51 | Train Loss: 2.1204 | Val Loss: 2.1511 | Train Acc: 0.4200 | Val Acc: 0.4133 | Best Epoch: 40
+Epoch 46/51 | Train Loss: 2.1022 | Val Loss: 2.1286 | Train Acc: 0.4533 | Val Acc: 0.4733 | Best Epoch: 45
+Training completed in 28m 0s
+Evaluating on test set...
+Finished!
+
+Running experiments for 0.0001 learning rate...
+Number of parameters: 12810
+Model size: 0.05 MB
+Training for: efficientnet_v2_sarch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 2.3161 | Val Loss: 2.2852 | Train Acc: 0.1000 | Val Acc: 0.1133 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 2.0572 | Val Loss: 2.0641 | Train Acc: 0.5267 | Val Acc: 0.6467 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 1.8422 | Val Loss: 1.8622 | Train Acc: 0.8467 | Val Acc: 0.9067 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 1.6362 | Val Loss: 1.6667 | Train Acc: 0.9600 | Val Acc: 0.9333 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 1.4283 | Val Loss: 1.4973 | Train Acc: 0.9467 | Val Acc: 0.9467 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 1.2833 | Val Loss: 1.3439 | Train Acc: 0.9667 | Val Acc: 0.9467 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 1.1986 | Val Loss: 1.2151 | Train Acc: 0.9533 | Val Acc: 0.9533 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 0.9540 | Val Loss: 1.0779 | Train Acc: 1.0000 | Val Acc: 0.9467 | Best Epoch: 35
+Epoch 41/51 | Train Loss: 0.8439 | Val Loss: 0.9805 | Train Acc: 1.0000 | Val Acc: 0.9600 | Best Epoch: 40
+Epoch 46/51 | Train Loss: 0.7789 | Val Loss: 0.8927 | Train Acc: 0.9933 | Val Acc: 0.9667 | Best Epoch: 45
+Training completed in 28m 1s
+Evaluating on test set...
+Finished!
+
+Running experiments for resnet101 architecture...
+
+Running experiments for random initialization...
+Number of parameters: 42520650
+Model size: 162.20 MB
+Training for: resnet101arch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_randomscratch
+Epoch 1/51 | Train Loss: 2.4796 | Val Loss: 2.3369 | Train Acc: 0.1200 | Val Acc: 0.1000 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 2.0980 | Val Loss: 3.2530 | Train Acc: 0.1933 | Val Acc: 0.1000 | Best Epoch: 1
+Epoch 11/51 | Train Loss: 1.8657 | Val Loss: 2.1130 | Train Acc: 0.3267 | Val Acc: 0.2867 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 1.6149 | Val Loss: 2.2375 | Train Acc: 0.4267 | Val Acc: 0.2200 | Best Epoch: 11
+Epoch 21/51 | Train Loss: 1.4680 | Val Loss: 2.0921 | Train Acc: 0.4867 | Val Acc: 0.2467 | Best Epoch: 11
+Epoch 26/51 | Train Loss: 1.1704 | Val Loss: 2.0368 | Train Acc: 0.6000 | Val Acc: 0.3933 | Best Epoch: 23
+Epoch 31/51 | Train Loss: 1.0691 | Val Loss: 3.1569 | Train Acc: 0.6333 | Val Acc: 0.2467 | Best Epoch: 23
+Epoch 36/51 | Train Loss: 0.6691 | Val Loss: 2.0006 | Train Acc: 0.7867 | Val Acc: 0.4067 | Best Epoch: 34
+Epoch 41/51 | Train Loss: 0.4125 | Val Loss: 2.7222 | Train Acc: 0.8867 | Val Acc: 0.3800 | Best Epoch: 34
+Early stopping
+Epoch 44/51 | Train Loss: 0.5071 | Val Loss: 2.1934 | Train Acc: 0.8867 | Val Acc: 0.4133 | Best Epoch: 34
+Training completed in 20m 50s
+Evaluating on test set...
+Finished!
+
+Running experiments for imagenet initialization...
+Downloading: "https://download.pytorch.org/models/resnet101-cd907fc2.pth" to C:\Users\LENOVO/.cache\torch\hub\checkpoints\resnet101-cd907fc2.pth
+100.0%
+Number of parameters: 42520650
+Model size: 162.20 MB
+Training for: resnet101arch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_imagenetscratch
+Epoch 1/51 | Train Loss: 2.2864 | Val Loss: 2.1173 | Train Acc: 0.1733 | Val Acc: 0.4333 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 0.1676 | Val Loss: 0.3147 | Train Acc: 1.0000 | Val Acc: 0.9667 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 0.0078 | Val Loss: 0.1129 | Train Acc: 1.0000 | Val Acc: 0.9800 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 0.0035 | Val Loss: 0.0968 | Train Acc: 1.0000 | Val Acc: 0.9800 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 0.0019 | Val Loss: 0.0910 | Train Acc: 1.0000 | Val Acc: 0.9733 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 0.0015 | Val Loss: 0.0842 | Train Acc: 1.0000 | Val Acc: 0.9733 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 0.0009 | Val Loss: 0.0801 | Train Acc: 1.0000 | Val Acc: 0.9867 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 0.0013 | Val Loss: 0.0770 | Train Acc: 1.0000 | Val Acc: 0.9867 | Best Epoch: 34
+Epoch 41/51 | Train Loss: 0.0008 | Val Loss: 0.0722 | Train Acc: 1.0000 | Val Acc: 0.9867 | Best Epoch: 40
+Epoch 46/51 | Train Loss: 0.0015 | Val Loss: 0.0738 | Train Acc: 1.0000 | Val Acc: 0.9867 | Best Epoch: 41
+Training completed in 22m 37s
+Evaluating on test set...
+Finished!
+
+Running experiments for tune initialization...
+Number of parameters: 20490
+Model size: 0.08 MB
+Training for: resnet101arch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 2.2618 | Val Loss: 2.2093 | Train Acc: 0.1467 | Val Acc: 0.3133 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 1.9576 | Val Loss: 1.9570 | Train Acc: 0.6800 | Val Acc: 0.6800 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 1.6981 | Val Loss: 1.7459 | Train Acc: 0.9067 | Val Acc: 0.8600 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 1.4627 | Val Loss: 1.5533 | Train Acc: 0.9667 | Val Acc: 0.9200 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 1.2852 | Val Loss: 1.3953 | Train Acc: 0.9867 | Val Acc: 0.9267 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 1.0791 | Val Loss: 1.2432 | Train Acc: 1.0000 | Val Acc: 0.9400 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 0.9888 | Val Loss: 1.1402 | Train Acc: 0.9933 | Val Acc: 0.9467 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 0.8389 | Val Loss: 1.0249 | Train Acc: 1.0000 | Val Acc: 0.9533 | Best Epoch: 35
+Epoch 41/51 | Train Loss: 0.7335 | Val Loss: 0.9463 | Train Acc: 1.0000 | Val Acc: 0.9533 | Best Epoch: 40
+Epoch 46/51 | Train Loss: 0.6386 | Val Loss: 0.8763 | Train Acc: 1.0000 | Val Acc: 0.9600 | Best Epoch: 45
+Training completed in 6m 45s
+Evaluating on test set...
+Finished!
+
+Running experiments for 8 batch size...
+Number of parameters: 20490
+Model size: 0.08 MB
+Training for: resnet101arch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_8batch_tunescratch
+Epoch 1/51 | Train Loss: 2.2670 | Val Loss: 2.1958 | Train Acc: 0.1400 | Val Acc: 0.2533 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 1.6918 | Val Loss: 1.7536 | Train Acc: 0.8667 | Val Acc: 0.8733 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 1.2500 | Val Loss: 1.4408 | Train Acc: 0.9600 | Val Acc: 0.9467 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 0.9705 | Val Loss: 1.1759 | Train Acc: 0.9667 | Val Acc: 0.9533 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 0.7397 | Val Loss: 1.0112 | Train Acc: 0.9867 | Val Acc: 0.9600 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 0.5706 | Val Loss: 0.8593 | Train Acc: 0.9933 | Val Acc: 0.9600 | Best Epoch: 24
+Epoch 31/51 | Train Loss: 0.4837 | Val Loss: 0.7760 | Train Acc: 1.0000 | Val Acc: 0.9600 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 0.4197 | Val Loss: 0.7003 | Train Acc: 1.0000 | Val Acc: 0.9600 | Best Epoch: 35
+Epoch 41/51 | Train Loss: 0.3198 | Val Loss: 0.5784 | Train Acc: 0.9933 | Val Acc: 0.9667 | Best Epoch: 40
+Epoch 46/51 | Train Loss: 0.2974 | Val Loss: 0.5474 | Train Acc: 1.0000 | Val Acc: 0.9667 | Best Epoch: 44
+Training completed in 17m 53s
+Evaluating on test set...
+Finished!
+
+Running experiments for 16 batch size...
+Number of parameters: 20490
+Model size: 0.08 MB
+Training for: resnet101arch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_16batch_tunescratch
+Epoch 1/51 | Train Loss: 2.2745 | Val Loss: 2.2277 | Train Acc: 0.1200 | Val Acc: 0.2067 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 1.8584 | Val Loss: 1.8990 | Train Acc: 0.7600 | Val Acc: 0.7400 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 1.5147 | Val Loss: 1.6249 | Train Acc: 0.9600 | Val Acc: 0.8867 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 1.2397 | Val Loss: 1.3911 | Train Acc: 0.9867 | Val Acc: 0.9400 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 1.0120 | Val Loss: 1.1850 | Train Acc: 0.9867 | Val Acc: 0.9467 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 0.8402 | Val Loss: 1.0430 | Train Acc: 0.9867 | Val Acc: 0.9600 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 0.7070 | Val Loss: 0.9152 | Train Acc: 0.9933 | Val Acc: 0.9533 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 0.5586 | Val Loss: 0.8135 | Train Acc: 0.9933 | Val Acc: 0.9800 | Best Epoch: 35
+Epoch 41/51 | Train Loss: 0.4976 | Val Loss: 0.7381 | Train Acc: 1.0000 | Val Acc: 0.9600 | Best Epoch: 40
+Epoch 46/51 | Train Loss: 0.4516 | Val Loss: 0.6977 | Train Acc: 0.9933 | Val Acc: 0.9733 | Best Epoch: 45
+Training completed in 21m 39s
+Evaluating on test set...
+Finished!
+
+Running experiments for 32 batch size...
+Number of parameters: 20490
+Model size: 0.08 MB
+Training for: resnet101arch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 2.2416 | Val Loss: 2.2517 | Train Acc: 0.1400 | Val Acc: 0.2133 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 1.9497 | Val Loss: 1.9733 | Train Acc: 0.7000 | Val Acc: 0.7000 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 1.6924 | Val Loss: 1.7524 | Train Acc: 0.9067 | Val Acc: 0.9000 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 1.4590 | Val Loss: 1.5603 | Train Acc: 0.9867 | Val Acc: 0.9533 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 1.2629 | Val Loss: 1.3988 | Train Acc: 0.9933 | Val Acc: 0.9733 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 1.0916 | Val Loss: 1.2550 | Train Acc: 0.9933 | Val Acc: 0.9733 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 0.9273 | Val Loss: 1.1266 | Train Acc: 1.0000 | Val Acc: 0.9800 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 0.7927 | Val Loss: 1.0238 | Train Acc: 1.0000 | Val Acc: 0.9733 | Best Epoch: 35
+Epoch 41/51 | Train Loss: 0.7144 | Val Loss: 0.9280 | Train Acc: 0.9933 | Val Acc: 0.9800 | Best Epoch: 40
+Epoch 46/51 | Train Loss: 0.6263 | Val Loss: 0.8612 | Train Acc: 1.0000 | Val Acc: 0.9800 | Best Epoch: 45
+Training completed in 6m 45s
+Evaluating on test set...
+Finished!
+
+Running experiments for 0.0 weight decay...
+Number of parameters: 20490
+Model size: 0.08 MB
+Training for: resnet101arch_groupnorm_0.2do_0.0wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 2.2904 | Val Loss: 2.2438 | Train Acc: 0.2000 | Val Acc: 0.1267 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 1.9897 | Val Loss: 2.0086 | Train Acc: 0.5800 | Val Acc: 0.5333 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 1.7310 | Val Loss: 1.7920 | Train Acc: 0.8267 | Val Acc: 0.7667 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 1.4881 | Val Loss: 1.6040 | Train Acc: 0.9400 | Val Acc: 0.8667 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 1.3076 | Val Loss: 1.4442 | Train Acc: 0.9600 | Val Acc: 0.9200 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 1.1434 | Val Loss: 1.3100 | Train Acc: 0.9867 | Val Acc: 0.9333 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 0.9593 | Val Loss: 1.1752 | Train Acc: 0.9933 | Val Acc: 0.9400 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 0.8473 | Val Loss: 1.0659 | Train Acc: 1.0000 | Val Acc: 0.9600 | Best Epoch: 35
+Epoch 41/51 | Train Loss: 0.7335 | Val Loss: 0.9830 | Train Acc: 1.0000 | Val Acc: 0.9600 | Best Epoch: 40
+Epoch 46/51 | Train Loss: 0.6587 | Val Loss: 0.9091 | Train Acc: 1.0000 | Val Acc: 0.9533 | Best Epoch: 45
+Training completed in 6m 46s
+Evaluating on test set...
+Finished!
+
+Running experiments for 0.01 weight decay...
+Number of parameters: 20490
+Model size: 0.08 MB
+Training for: resnet101arch_groupnorm_0.2do_0.01wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 2.3129 | Val Loss: 2.2933 | Train Acc: 0.1133 | Val Acc: 0.1333 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 2.0078 | Val Loss: 2.0507 | Train Acc: 0.5333 | Val Acc: 0.5133 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 1.7376 | Val Loss: 1.8335 | Train Acc: 0.9133 | Val Acc: 0.8133 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 1.5013 | Val Loss: 1.6455 | Train Acc: 0.9667 | Val Acc: 0.8867 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 1.3115 | Val Loss: 1.4673 | Train Acc: 0.9933 | Val Acc: 0.9200 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 1.1434 | Val Loss: 1.3424 | Train Acc: 1.0000 | Val Acc: 0.9333 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 0.9925 | Val Loss: 1.1998 | Train Acc: 1.0000 | Val Acc: 0.9333 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 0.8505 | Val Loss: 1.0900 | Train Acc: 1.0000 | Val Acc: 0.9533 | Best Epoch: 35
+Epoch 41/51 | Train Loss: 0.7800 | Val Loss: 1.0123 | Train Acc: 1.0000 | Val Acc: 0.9533 | Best Epoch: 40
+Epoch 46/51 | Train Loss: 0.6816 | Val Loss: 0.9255 | Train Acc: 0.9933 | Val Acc: 0.9600 | Best Epoch: 45
+Training completed in 6m 44s
+Evaluating on test set...
+Finished!
+
+Running experiments for 2e-05 weight decay...
+Number of parameters: 20490
+Model size: 0.08 MB
+Training for: resnet101arch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 2.2999 | Val Loss: 2.2776 | Train Acc: 0.1200 | Val Acc: 0.1200 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 2.0139 | Val Loss: 2.0594 | Train Acc: 0.5533 | Val Acc: 0.4133 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 1.7393 | Val Loss: 1.8453 | Train Acc: 0.8533 | Val Acc: 0.7533 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 1.4834 | Val Loss: 1.6521 | Train Acc: 0.9733 | Val Acc: 0.8867 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 1.2791 | Val Loss: 1.4790 | Train Acc: 1.0000 | Val Acc: 0.9267 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 1.1319 | Val Loss: 1.3222 | Train Acc: 0.9933 | Val Acc: 0.9600 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 0.9502 | Val Loss: 1.2062 | Train Acc: 0.9933 | Val Acc: 0.9600 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 0.8521 | Val Loss: 1.0933 | Train Acc: 1.0000 | Val Acc: 0.9600 | Best Epoch: 35
+Epoch 41/51 | Train Loss: 0.7306 | Val Loss: 0.9875 | Train Acc: 1.0000 | Val Acc: 0.9600 | Best Epoch: 40
+Epoch 46/51 | Train Loss: 0.6903 | Val Loss: 0.9257 | Train Acc: 0.9933 | Val Acc: 0.9600 | Best Epoch: 45
+Training completed in 6m 45s
+Evaluating on test set...
+Finished!
+
+Running experiments for squared_hinge loss...
+Number of parameters: 20490
+Model size: 0.08 MB
+Training for: resnet101arch_groupnorm_0.2do_2e-05wd_squared_hingeloss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 9.4686 | Val Loss: 8.2305 | Train Acc: 0.1200 | Val Acc: 0.1600 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 4.8240 | Val Loss: 4.8195 | Train Acc: 0.5267 | Val Acc: 0.5800 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 2.4906 | Val Loss: 2.9921 | Train Acc: 0.8733 | Val Acc: 0.8533 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 1.2760 | Val Loss: 2.0068 | Train Acc: 0.9800 | Val Acc: 0.9267 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 0.8267 | Val Loss: 1.4743 | Train Acc: 1.0000 | Val Acc: 0.9400 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 0.5556 | Val Loss: 1.1902 | Train Acc: 0.9867 | Val Acc: 0.9400 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 0.3564 | Val Loss: 1.0036 | Train Acc: 1.0000 | Val Acc: 0.9467 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 0.2393 | Val Loss: 0.8667 | Train Acc: 1.0000 | Val Acc: 0.9533 | Best Epoch: 35
+Epoch 41/51 | Train Loss: 0.1948 | Val Loss: 0.8051 | Train Acc: 1.0000 | Val Acc: 0.9600 | Best Epoch: 40
+Epoch 46/51 | Train Loss: 0.1317 | Val Loss: 0.7049 | Train Acc: 1.0000 | Val Acc: 0.9600 | Best Epoch: 45
+Training completed in 6m 45s
+Evaluating on test set...
+Finished!
+
+Running experiments for ce loss...
+Number of parameters: 20490
+Model size: 0.08 MB
+Training for: resnet101arch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 2.2877 | Val Loss: 2.2557 | Train Acc: 0.0933 | Val Acc: 0.1133 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 1.9849 | Val Loss: 2.0186 | Train Acc: 0.5467 | Val Acc: 0.5067 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 1.7165 | Val Loss: 1.8053 | Train Acc: 0.8933 | Val Acc: 0.7733 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 1.4858 | Val Loss: 1.6130 | Train Acc: 0.9600 | Val Acc: 0.8867 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 1.2812 | Val Loss: 1.4578 | Train Acc: 0.9867 | Val Acc: 0.9200 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 1.1273 | Val Loss: 1.3101 | Train Acc: 0.9933 | Val Acc: 0.9267 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 0.9693 | Val Loss: 1.1810 | Train Acc: 1.0000 | Val Acc: 0.9467 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 0.8309 | Val Loss: 1.0705 | Train Acc: 1.0000 | Val Acc: 0.9467 | Best Epoch: 35
+Epoch 41/51 | Train Loss: 0.7570 | Val Loss: 0.9900 | Train Acc: 1.0000 | Val Acc: 0.9467 | Best Epoch: 40
+Epoch 46/51 | Train Loss: 0.6391 | Val Loss: 0.8911 | Train Acc: 1.0000 | Val Acc: 0.9533 | Best Epoch: 45
+Training completed in 6m 45s
+Evaluating on test set...
+Finished!
+
+Running experiments for 0.01 learning rate...
+Number of parameters: 20490
+Model size: 0.08 MB
+Training for: resnet101arch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.01lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 1.3878 | Val Loss: 0.5005 | Train Acc: 0.5733 | Val Acc: 0.9333 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 0.0043 | Val Loss: 0.1870 | Train Acc: 1.0000 | Val Acc: 0.9533 | Best Epoch: 4
+Epoch 11/51 | Train Loss: 0.0015 | Val Loss: 0.1489 | Train Acc: 1.0000 | Val Acc: 0.9600 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 0.0014 | Val Loss: 0.1435 | Train Acc: 1.0000 | Val Acc: 0.9600 | Best Epoch: 11
+Epoch 21/51 | Train Loss: 0.0004 | Val Loss: 0.1417 | Train Acc: 1.0000 | Val Acc: 0.9600 | Best Epoch: 19
+Epoch 26/51 | Train Loss: 0.0003 | Val Loss: 0.2040 | Train Acc: 1.0000 | Val Acc: 0.9400 | Best Epoch: 19
+Early stopping
+Epoch 29/51 | Train Loss: 0.0004 | Val Loss: 0.1921 | Train Acc: 1.0000 | Val Acc: 0.9333 | Best Epoch: 19
+Training completed in 3m 55s
+Evaluating on test set...
+Finished!
+
+Running experiments for 1e-05 learning rate...
+Number of parameters: 20490
+Model size: 0.08 MB
+Training for: resnet101arch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_1e-05lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 2.3431 | Val Loss: 2.3221 | Train Acc: 0.0133 | Val Acc: 0.0733 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 2.3057 | Val Loss: 2.3030 | Train Acc: 0.0533 | Val Acc: 0.1000 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 2.2718 | Val Loss: 2.2802 | Train Acc: 0.0800 | Val Acc: 0.1333 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 2.2499 | Val Loss: 2.2552 | Train Acc: 0.1000 | Val Acc: 0.1333 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 2.2238 | Val Loss: 2.2318 | Train Acc: 0.1667 | Val Acc: 0.1667 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 2.1775 | Val Loss: 2.2051 | Train Acc: 0.2133 | Val Acc: 0.2267 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 2.1723 | Val Loss: 2.1815 | Train Acc: 0.2467 | Val Acc: 0.2533 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 2.1271 | Val Loss: 2.1571 | Train Acc: 0.3333 | Val Acc: 0.3067 | Best Epoch: 35
+Epoch 41/51 | Train Loss: 2.0925 | Val Loss: 2.1315 | Train Acc: 0.4200 | Val Acc: 0.3267 | Best Epoch: 40
+Epoch 46/51 | Train Loss: 2.0708 | Val Loss: 2.1103 | Train Acc: 0.5067 | Val Acc: 0.3867 | Best Epoch: 45
+Training completed in 6m 44s
+Evaluating on test set...
+Finished!
+
+Running experiments for 0.0001 learning rate...
+Number of parameters: 20490
+Model size: 0.08 MB
+Training for: resnet101arch_groupnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_tunescratch
+Epoch 1/51 | Train Loss: 2.2765 | Val Loss: 2.2529 | Train Acc: 0.1133 | Val Acc: 0.0867 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 1.9617 | Val Loss: 1.9981 | Train Acc: 0.6933 | Val Acc: 0.6200 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 1.6962 | Val Loss: 1.7939 | Train Acc: 0.9133 | Val Acc: 0.8067 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 1.4713 | Val Loss: 1.6066 | Train Acc: 0.9800 | Val Acc: 0.8933 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 1.2994 | Val Loss: 1.4491 | Train Acc: 0.9933 | Val Acc: 0.9267 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 1.1014 | Val Loss: 1.2930 | Train Acc: 1.0000 | Val Acc: 0.9533 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 0.9513 | Val Loss: 1.1596 | Train Acc: 1.0000 | Val Acc: 0.9600 | Best Epoch: 30
+Epoch 36/51 | Train Loss: 0.8352 | Val Loss: 1.0619 | Train Acc: 1.0000 | Val Acc: 0.9533 | Best Epoch: 35
+Epoch 41/51 | Train Loss: 0.7500 | Val Loss: 0.9714 | Train Acc: 1.0000 | Val Acc: 0.9533 | Best Epoch: 40
+Epoch 46/51 | Train Loss: 0.6576 | Val Loss: 0.8819 | Train Acc: 1.0000 | Val Acc: 0.9533 | Best Epoch: 45
+Training completed in 6m 45s
+Evaluating on test set...
+Finished!
