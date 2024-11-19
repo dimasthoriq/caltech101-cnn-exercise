@@ -97,7 +97,7 @@ if __name__ == '__main__':
         print(f'\nRunning experiments for {archi} architecture...')
         config['archi'] = archi
         if archi == 'custom':
-            for normalization in ['batch', 'group']:
+            for normalization in ['group', 'batch']:
                 print(f'\nRunning experiments for {normalization} normalization...')
                 config['normalization'] = normalization
                 for batch_size in [8, 16, 32]:
