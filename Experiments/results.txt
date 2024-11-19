@@ -311,34 +311,35 @@ Finished!
 Running experiments for efficientnet_v2_s architecture...
 
 Running experiments for random initialization...
-Number of parameters: 103137802
-Model size: 393.44 MB
-Training for: customarch_batchnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_randomscratch
-Epoch 1/51 | Train Loss: 10.7636 | Val Loss: 2.4918 | Train Acc: 0.1400 | Val Acc: 0.1333 | Best Epoch: 0
-Epoch 6/51 | Train Loss: 0.6951 | Val Loss: 1.4288 | Train Acc: 0.7733 | Val Acc: 0.5000 | Best Epoch: 4
-Epoch 11/51 | Train Loss: 0.1783 | Val Loss: 1.3169 | Train Acc: 0.9600 | Val Acc: 0.6667 | Best Epoch: 9
-Epoch 16/51 | Train Loss: 0.0567 | Val Loss: 1.2991 | Train Acc: 0.9933 | Val Acc: 0.6600 | Best Epoch: 14
-Epoch 21/51 | Train Loss: 0.0293 | Val Loss: 1.2785 | Train Acc: 1.0000 | Val Acc: 0.6600 | Best Epoch: 20
-Epoch 26/51 | Train Loss: 0.0186 | Val Loss: 1.2831 | Train Acc: 1.0000 | Val Acc: 0.6733 | Best Epoch: 20
+Number of parameters: 20190298
+Model size: 77.02 MB
+Training for: efficientnet_v2_sarch_batchnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_randomscratch
+Epoch 1/51 | Train Loss: 2.3336 | Val Loss: 2.3017 | Train Acc: 0.1200 | Val Acc: 0.1000 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 2.2401 | Val Loss: 2.3050 | Train Acc: 0.1333 | Val Acc: 0.1000 | Best Epoch: 1
+Epoch 11/51 | Train Loss: 2.0827 | Val Loss: 2.3126 | Train Acc: 0.2067 | Val Acc: 0.1000 | Best Epoch: 1
 Early stopping
-Epoch 30/51 | Train Loss: 0.0204 | Val Loss: 1.4094 | Train Acc: 1.0000 | Val Acc: 0.6467 | Best Epoch: 20
-Training completed in 3m 33s
+Epoch 11/51 | Train Loss: 2.0827 | Val Loss: 2.3126 | Train Acc: 0.2067 | Val Acc: 0.1000 | Best Epoch: 1
+Training completed in 3m 3s
 Evaluating on test set...
 Finished!
 
 Running experiments for imagenet initialization...
-Number of parameters: 103137802
-Model size: 393.44 MB
-Training for: customarch_batchnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_imagenetscratch
-Epoch 1/51 | Train Loss: 12.6052 | Val Loss: 2.8028 | Train Acc: 0.0600 | Val Acc: 0.1533 | Best Epoch: 0
-Epoch 6/51 | Train Loss: 0.9544 | Val Loss: 1.5364 | Train Acc: 0.6800 | Val Acc: 0.5333 | Best Epoch: 4
-Epoch 11/51 | Train Loss: 0.1707 | Val Loss: 1.2190 | Train Acc: 0.9800 | Val Acc: 0.6400 | Best Epoch: 8
-Epoch 16/51 | Train Loss: 0.0843 | Val Loss: 1.1792 | Train Acc: 0.9867 | Val Acc: 0.6533 | Best Epoch: 15
-Epoch 21/51 | Train Loss: 0.0692 | Val Loss: 1.1498 | Train Acc: 0.9867 | Val Acc: 0.6600 | Best Epoch: 19
-Epoch 26/51 | Train Loss: 0.0368 | Val Loss: 1.1625 | Train Acc: 1.0000 | Val Acc: 0.6667 | Best Epoch: 19
+Downloading: "https://download.pytorch.org/models/efficientnet_v2_s-dd5fe13b.pth" to /root/.cache/torch/hub/checkpoints/efficientnet_v2_s-dd5fe13b.pth
+100%|██████████| 82.7M/82.7M [00:00<00:00, 113MB/s]
+Number of parameters: 20190298
+Model size: 77.02 MB
+Training for: efficientnet_v2_sarch_batchnorm_0.2do_2e-05wd_celoss_Nonetrunc_0.0001lr_32batch_imagenetscratch
+Epoch 1/51 | Train Loss: 2.1747 | Val Loss: 1.9254 | Train Acc: 0.3733 | Val Acc: 0.7600 | Best Epoch: 0
+Epoch 6/51 | Train Loss: 0.2102 | Val Loss: 0.2676 | Train Acc: 1.0000 | Val Acc: 0.9733 | Best Epoch: 5
+Epoch 11/51 | Train Loss: 0.0352 | Val Loss: 0.0873 | Train Acc: 1.0000 | Val Acc: 0.9867 | Best Epoch: 10
+Epoch 16/51 | Train Loss: 0.0155 | Val Loss: 0.0568 | Train Acc: 1.0000 | Val Acc: 0.9867 | Best Epoch: 15
+Epoch 21/51 | Train Loss: 0.0079 | Val Loss: 0.0539 | Train Acc: 1.0000 | Val Acc: 0.9867 | Best Epoch: 20
+Epoch 26/51 | Train Loss: 0.0067 | Val Loss: 0.0504 | Train Acc: 1.0000 | Val Acc: 0.9867 | Best Epoch: 25
+Epoch 31/51 | Train Loss: 0.0052 | Val Loss: 0.0585 | Train Acc: 1.0000 | Val Acc: 0.9800 | Best Epoch: 27
+Epoch 36/51 | Train Loss: 0.0039 | Val Loss: 0.0594 | Train Acc: 1.0000 | Val Acc: 0.9800 | Best Epoch: 27
 Early stopping
-Epoch 29/51 | Train Loss: 0.0291 | Val Loss: 1.1300 | Train Acc: 1.0000 | Val Acc: 0.6867 | Best Epoch: 19
-Training completed in 1m 33s
+Epoch 37/51 | Train Loss: 0.0040 | Val Loss: 0.0611 | Train Acc: 1.0000 | Val Acc: 0.9800 | Best Epoch: 27
+Training completed in 5m 22s
 Evaluating on test set...
 Finished!
 
